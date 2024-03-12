@@ -15,6 +15,6 @@
     </head>
     <body class="antialiased">
      <livewire:sidebar>
-        yuudwydwuduw
+    
     </body>
 </html>
