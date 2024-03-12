@@ -69,5 +69,6 @@ new #[Layout('layouts.guest')] class extends Component
             </x-primary-button>
             <a href='/register'>Register</a>
         </div>
+        dwedwedwe
     </form>
 </div>
