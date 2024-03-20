@@ -1,19 +1,18 @@
-<!-- component -->
 <div>
-  <nav class="bg-blue-500 p-4 flex items-center justify-between">
-    <div>
-      <h1 class="text-white text-xl font-semibold">SALUD 360</h1>
+  <div class="flex">
+  <div class="relative flex flex-col bg-clip-border bg-blue-900 text-white h-[100vh] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
+    <div class="mb-2 p-4">
+      <h5 class="block antialiased tracking-normal font-sans text-xl font-semibold leading-snug text-white">PLUS+</h5>
     </div>
-    <div class="flex items-center space-x-4">
-      <span class="text-white">Bienvenido</span>
-      <i class="fas fa-user-circle text-white text-2xl"></i>
+    <div class="flex flex-col">
+        <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+          <x-sidebar-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
+              {{ __('Dashboard') }}
+          </x-sidebar-link>
+      </div>
     </div>
-  </nav>
-
-  <!-- Navegación lateral -->
-  <aside class="bg-gray-800 text-white absolute top-0 left-0 w-64 min-h-screen p-4">
-    <nav>
-    </nav>
-  </aside>
+  </div>
+    <div class="w-full ml-[20rm] h-[100px">
+      <livewire:layout.navigation /></div>
+   </div>
 </div>
-
